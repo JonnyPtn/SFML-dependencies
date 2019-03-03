@@ -6,12 +6,14 @@ project(SFML-dependencies)
 add_subdirectory(freetype2)
 add_subdirectory(ogg)
 
-# openal-soft has cmake, but a load of stuff we dont need
-# so lets disable them
-set(ALSOFT_UTILS OFF CACHE BOOL "")
-set(ALSOFT_EXAMPLES OFF CACHE BOOL "")
-set(ALSOFT_TESTS OFF CACHE BOOL "")
-add_subdirectory(openal-soft)
+# openal-soft (included already by emscripten) has cmake, 
+# but a load of stuff we dont need so lets disable them
+if (NOT EMSCRIPTEN)
+    set(ALSOFT_UTILS OFF CACHE BOOL "")
+    set(ALSOFT_EXAMPLES OFF CACHE BOOL "")
+    set(ALSOFT_TESTS OFF CACHE BOOL "")
+    add_subdirectory(openal-soft)
+endif()
 
 # vorbis requires these ogg variables to be set
 set(OGG_LIBRARIES $<TARGET_FILE:ogg>) 
