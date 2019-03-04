@@ -12,7 +12,7 @@
 | [opus](https://xiph.org/flac/)                         | v1.2.1             | `https://github.com/xiph/opus.git`                   |
 | [opusfile](https://github.com/xiph/opusfile)           | v0.8               | `https://github.com/xiph/opusfile.git`               |
 | [freetype2](https://www.freetype.org/)                 | VER-2-8            | `git://git.sv.nongnu.org/freetype/freetype2.git`     | 
-| [openal-soft](http://kcat.strangesoft.net/openal.html) | openal-soft-1.19.1 | `https://github.com/kcat/openal-soft.git`            |
+| [openal-soft](http://kcat.strangesoft.net/openal.html) | openal-soft-1.17.2 | `https://github.com/kcat/openal-soft.git`            |
 | [stb_*](https://github.com/nothings/stb)               | master             | `https://github.com/nothings/stb.git`                |
 
 ## Building
